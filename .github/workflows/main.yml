@@ -37,7 +37,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           script: |
-            cd /path/to/your/app
+            cd /home/ec2-user/reactcrud
             git pull origin main
             npm install
             npm run build
